@@ -1,0 +1,27 @@
+---
+title: "DDP project 2"
+author: "Sanya Sharma"
+date: "August 11, 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+R Markdown Presentation & Plotly
+
+## Developing Data Products- Week 3 assignment 
+
+Create a web page presentation using R Markdown that features a plot created with Plotly. Host your webpage on either GitHub Pages, RPubs, or NeoCities. Your webpage must contain the date that you created the document, and it must contain a plot created with Plotly.
+
+## My Plot: The Effect of Vitamin C on Tooth Growth in Guinea Pigs
+
+```{r}
+data(ToothGrowth)
+library(plotly)
+
+plot_ly(ToothGrowth, x = ~len, y = ~dose, type = "scatter")
+
+```
+
