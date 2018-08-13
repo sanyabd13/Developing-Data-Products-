@@ -1,4 +1,4 @@
-##server. R 
+#Server code
 
 library(shiny) 
 library(datasets) 
